@@ -107,7 +107,8 @@ pub(crate) mod test {
 
     /// Evm runner.
     pub struct Evm {
-        evm: EVM<InMemoryDB>,
+        /// inner revm
+        pub evm: EVM<InMemoryDB>,
     }
 
     impl Debug for Evm {
